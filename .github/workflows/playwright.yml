@@ -6,6 +6,13 @@ on:
     branches: [main]
   pull_request:
     branches: [main]
+  workflow_dispatch:
+    inputs:
+      branch:
+        description: 'Branch to run Playwright tests against'
+        required: true
+        type: string
+        default: 'main'
 
 permissions:
   contents: read
