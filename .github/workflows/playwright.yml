@@ -54,17 +54,17 @@ jobs:
 
       # Only publish reports from pushes to main.
       - name: Configure GitHub Pages
-        if: github.event_name == 'push'
+        # if: github.event_name == 'push'
         uses: actions/configure-pages@v5
 
       - name: Upload Pages artifact
-        if: github.event_name == 'push'
+        # if: github.event_name == 'push'
         uses: actions/upload-pages-artifact@v4
         with:
           path: playwright-report/
 
       - name: Deploy to GitHub Pages
-        if: github.event_name == 'push'
+        # if: github.event_name == 'push'
         id: deployment
         uses: actions/deploy-pages@v4
 
