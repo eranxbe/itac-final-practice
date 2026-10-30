@@ -67,6 +67,8 @@ jobs:
         # if: github.event_name == 'push'
         id: deployment
         uses: actions/deploy-pages@v4
+        environment:
+          name: github-pages
 
       # Preserve the failed test status after publishing the report.
       - name: Fail workflow if tests failed
