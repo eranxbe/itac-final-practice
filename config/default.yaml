@@ -1,0 +1,16 @@
+env: local
+suite: all
+type: all
+baseURL: https://playwright.dev
+apiBaseURL: https://jsonplaceholder.typicode.com
+timeout: 30000
+retries: 0
+workers: null
+browsers:
+  - chromium
+  - firefox
+  - webkit
+trace: retain-on-failure
+screenshot: only-on-failure
+video: retain-on-failure
+headed: false

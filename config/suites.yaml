@@ -1,0 +1,20 @@
+suites:
+  smoke:
+    description: Fast critical path
+    tags:
+      - "@smoke"
+  regression:
+    description: Full regression coverage
+    tags:
+      - "@regression"
+  ui:
+    description: All UI tests
+    tags:
+      - "@ui"
+  api:
+    description: All API tests
+    tags:
+      - "@api"
+  all:
+    description: No tag filter
+    tags: []

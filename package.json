@@ -3,13 +3,28 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "test": "node scripts/run-tests.js",
+    "test:ui": "node scripts/run-tests.js --type ui",
+    "test:api": "node scripts/run-tests.js --type api",
+    "test:smoke": "node scripts/run-tests.js --suite smoke",
+    "test:regression": "node scripts/run-tests.js --suite regression",
+    "test:ui:smoke": "node scripts/run-tests.js --type ui --suite smoke",
+    "test:api:smoke": "node scripts/run-tests.js --type api --suite smoke",
+    "test:headed": "node scripts/run-tests.js --headed",
+    "test:debug": "node scripts/run-tests.js --debug",
+    "test:ui:headed": "node scripts/run-tests.js --type ui --headed",
+    "test:ci": "node scripts/run-tests.js --env ci --type all",
+    "report": "npx playwright show-report",
+    "test:codegen": "npx playwright codegen https://playwright.dev"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "type": "commonjs",
   "devDependencies": {
     "@playwright/test": "^1.64.1",
-    "@types/node": "^26.6.6"
+    "@types/node": "^26.6.6",
+    "js-yaml": "^4.1.1"
   }
 }

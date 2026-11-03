@@ -1,0 +1,3 @@
+# Local overlay. Uncomment or add values to override default.yaml.
+# baseURL: https://playwright.dev
+# apiBaseURL: https://jsonplaceholder.typicode.com

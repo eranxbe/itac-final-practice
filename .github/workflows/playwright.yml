@@ -43,7 +43,7 @@ jobs:
       - name: Run Playwright tests
         id: tests
         continue-on-error: true
-        run: npx playwright test
+        run: npm run test:ci
 
       # Keep a downloadable report in GitHub Actions too.
       - name: Upload test report artifact
